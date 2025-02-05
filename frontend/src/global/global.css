@@ -1,0 +1,16 @@
+/* Default LTR layout */
+.ltr {
+    direction: ltr;
+    text-align: left;
+  }
+  
+  /* RTL layout for Arabic */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .rtl .navmenu ul {
+    flex-direction: row-reverse;
+  }
+      

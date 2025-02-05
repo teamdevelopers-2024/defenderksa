@@ -1,0 +1,38 @@
+/* For the dropdown */
+.language-dropdown .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    /* Arrange items vertically */
+    padding: 0;
+    padding-right: 17px;
+    list-style: none;
+    /* Remove list style */
+    background-color: #fff;
+    /* Optional: for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for better visibility */
+    min-width: min-content;
+    /* Optional: Set a minimum width for better control */
+}
+
+
+.independant-dropdown {
+    display: none;
+    font-size: 14px;
+    font-family: var(--nav-font);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media (max-width:1199px) {
+    .independant-dropdown {
+        display: block;
+    }
+
+    .language-dropdown .dropdown-menu {
+        font-size: 14px;
+        padding: 17px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+}

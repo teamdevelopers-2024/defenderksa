@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fa-icons": "^0.2.0",
+    "framer-motion": "^12.0.3"
+  }
+}

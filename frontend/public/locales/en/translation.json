@@ -1,0 +1,46 @@
+{
+  "home": "Home",
+  "ourProducts": "Our Products",
+  "about": "About",
+  "contact": "Contact",
+  "hero": {
+    "heading": "Defender: Where Style Meets Durability – Empowering You to Conquer Every Day with Confidence, Comfort, and Timeless Elegance."
+  },
+  "products": {
+    "title": "Products",
+    "loading": "Loading...",
+    "order": "Order",
+    "whatsappMessage": "I'm interested in product {{art_number}}"
+  },
+  "contacts": {
+    "title": "Contact",
+    "address": "Address",
+    "addressDetails": "Defender, Taj Al Samy Trading EST, Al Samra, Hail, KSA 55425",
+    "callUs": "Call Us",
+    "phone": "0552278970",
+    "emailUs": "Email Us",
+    "email": "defenderboot@gmail.com"
+  },
+  "whatsapp": {
+    "message": "Have a question?",
+    "contactUs": "Contact us on WhatsApp!"
+  },
+  "aboutUs": {
+    "imageAlt": "Branded products",
+    "title": "About Us",
+    "description": "At our store, we offer a curated collection of premium, high-quality products, from rugged boots to military-grade gear. Our goal is to provide you with reliable, durable items that stand the test of time and meet the highest standards. Whether you're looking for military boots, tactical pants, or other specialized apparel, we've got you covered.",
+    "qualityTitle": "Premium Quality and Durability",
+    "qualityDescription": "Our products are crafted with the finest materials to ensure durability, comfort, and protection in any environment.",
+    "performanceTitle": "Designed for Performance",
+    "performanceDescription": "Our gear is designed for those who need high-performance apparel that can withstand tough conditions and demanding activities.",
+    "trustedTitle": "Trusted by Professionals",
+    "trustedDescription": "Our boots and tactical gear are trusted by professionals who rely on top-notch quality to perform at their best."
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "siteName": "Defender",
+    "allRights": "All Rights Reserved",
+    "designedBy": "Designed by",
+    "companyName": "Zeecode Solutions"
+  }
+}

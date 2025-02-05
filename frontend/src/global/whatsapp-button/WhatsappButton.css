@@ -1,0 +1,178 @@
+.whatsapp-button {
+  position: fixed;
+
+  width: 40px;
+  height: 40px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  animation: bounceAndScale 5s infinite;
+  /* Combine bounce and scaling animation */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Smooth transition for shadow */
+}
+
+.whatsapp-button:hover {
+  /* Heartbeat animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(37, 211, 102, 0.6),
+    /* First ring with more opacity */
+    0 0 20px rgba(37, 211, 102, 0.4),
+    /* Second ring with medium opacity */
+    0 0 30px rgba(37, 211, 102, 0.2);
+  /* Third ring with low opacity */
+}
+
+/* Heartbeat effect */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    /* Initial scale */
+  }
+
+  25% {
+    transform: scale(1.2);
+    /* Grow the button */
+  }
+
+  50% {
+    transform: scale(1);
+    /* Return to original size */
+  }
+
+  75% {
+    transform: scale(1.2);
+    /* Grow the button again */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Back to original size */
+  }
+}
+
+
+.whatsapp-icon {
+  color: #fff;
+  font-size: 26px;
+}
+
+.whatsapp-popup {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  color: #333;
+  z-index: 1000;
+  animation: bounce 0.6s normal
+}
+
+/* Tail for the message bubble */
+.whatsapp-popup::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  /* Tail position */
+  right: 20px;
+  /* Tail position */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  /* Same color as the background */
+}
+
+/* Smooth typing animation */
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s linear forwards;
+}
+
+/* Bounce and Scale Animation */
+@keyframes bounceAndScale {
+  0% {
+    transform: translateY(0) scale(1);
+    /* Initial position and scale */
+  }
+
+  25% {
+    transform: translateY(-15px) scale(1.2);
+    /* Move up and grow */
+  }
+
+  50% {
+    transform: translateY(0) scale(1);
+    /* Return to original position and scale */
+  }
+
+  75% {
+    transform: translateY(-15px) scale(1.2);
+    /* Move up and grow again */
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    /* Final position and scale */
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    max-width: 0;
+    /* Start with no visible text */
+  }
+
+  to {
+    max-width: 100%;
+    /* Reveal full text */
+  }
+}
+
+
+/* RESPONSIVENESS */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .whatsapp-icon {
+    font-size: 25px;
+  }
+
+  .whatsapp-popup {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .whatsapp-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsapp-icon {
+    font-size: 20px;
+  }
+
+  .whatsapp-popup {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
