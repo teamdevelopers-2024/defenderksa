@@ -39,6 +39,7 @@ const Header = () => {
       });
     };
 
+
     window.addEventListener("scroll", toggleScrolled);
     window.addEventListener("scroll", toggleScrollTop);
     window.addEventListener("scroll", navmenuScrollspy);
@@ -52,6 +53,7 @@ const Header = () => {
       window.removeEventListener("scroll", toggleScrollTop);
       window.removeEventListener("scroll", navmenuScrollspy);
     };
+
   }, []);
   // Change Language Function
   const changeLanguage = () => {
@@ -66,6 +68,7 @@ const Header = () => {
     setIsNavActive(!isNavActive);
     setIsNavDropdownActive(false); // Close language dropdown when toggling menu
   };
+  
 
   return (
     <header
@@ -76,8 +79,8 @@ const Header = () => {
       <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         {/* Logo */}
         <div className="logo d-flex align-items-center">
-          <img src={LogoOnly} className="h-6 w-7" alt="Logo" />
-          <img src={LogoText} className="size-40" alt="Logo Text" />
+          <img src={LogoOnly} className="h-5 w-6 sm:h-7 sm:w-8" alt="Logo" />
+          <img src={LogoText} className=" w-36 h-5 sm:w-40 sm:h-7" alt="Logo Text" />
         </div>
 
         {/* Right Side - Language & Navbar */}
@@ -109,16 +112,16 @@ const Header = () => {
           >
             <ul>
               <li>
-                <a href="#hero">{t("home")}</a>
+                <a href="#hero" onClick={toggleNavMenu}>{t("home")}</a>
               </li>
               <li>
-                <a href="#products">{t("ourProducts")}</a>
+                <a href="#products" onClick={toggleNavMenu}>{t("ourProducts")}</a>
               </li>
               <li>
-                <a href="#about">{t("about")}</a>
+                <a href="#about" onClick={toggleNavMenu}>{t("about")}</a>
               </li>
               <li>
-                <a href="#contact">{t("contact")}</a>
+                <a href="#contact" onClick={toggleNavMenu}>{t("contact")}</a>
               </li>
 
               {/* Language Dropdown inside Navbar */}

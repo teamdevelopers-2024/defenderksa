@@ -100,7 +100,7 @@ function Products() {
                         <video
                           className="w-full aspect-[4/3] mx-auto rounded-lg"
                           controls
-                          muted
+                          muted 
                           preload="metadata"
                         >
                           <source src={product.video.url} type="video/mp4" />
