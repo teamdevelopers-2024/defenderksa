@@ -104,7 +104,7 @@ function Products() {
                           preload="metadata"
                         >
                           <source src={product.video.url} type="video/mp4" />
-                          Your browser does not support the video tag.
+                          Your browser does not support the video tag. Please use a different browser
                         </video>
                       </SwiperSlide>
                     )}
