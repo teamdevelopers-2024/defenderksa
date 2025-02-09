@@ -69,7 +69,6 @@ function Products() {
                     ? "fade-left"
                     : "fade-up"
                 }
-                data-aos-delay={`${100}`}
               >
                 {/* Swiper Slider for Images & Videos */}
                 <div className="w-full relative">
