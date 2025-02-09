@@ -18,7 +18,6 @@ function Hero() {
           <div
             className="col-lg-6 order-1 order-lg-2 hero-img"
             data-aos="zoom-out"
-            data-aos-delay="100"
           >
             <img src={HeroImage} className="img-fluid animated" alt="" />
           </div>

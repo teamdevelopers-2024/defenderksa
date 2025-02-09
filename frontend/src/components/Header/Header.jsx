@@ -57,7 +57,7 @@ const Header = () => {
   }, []);
   // Change Language Function
   const changeLanguage = () => {
-    const newLanguage = i18n.language === "en" ? "ar" : "en";
+    const newLanguage = i18n.language === "en" ? "en" : "ar";
     i18n.changeLanguage(newLanguage);
     setIsDropdownActive(false);
     setIsNavDropdownActive(false);

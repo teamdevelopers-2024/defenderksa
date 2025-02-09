@@ -10,8 +10,8 @@ function Contact() {
         <h2>{t("contacts.title")}</h2> {/* Translated section title */}
       </div>
 
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div className="container" data-aos="fade-up">
+        <div className="mb-4" data-aos="fade-up">
           <iframe
             style={{ border: 0, width: "100%", height: "270px" }}
             src="https://www.google.com/maps/embed?pb=..."
@@ -24,29 +24,49 @@ function Contact() {
         <div className="row gy-4">
           <div className="col-lg-4">
             {/* Address Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div
+              className="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <i className="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>{t("contacts.address")}</h3> {/* Translated address heading */}
-                <p>{t("contacts.addressDetails")}</p> {/* Translated address details */}
+                <h3>{t("contacts.address")}</h3>{" "}
+                {/* Translated address heading */}
+                <p>{t("contacts.addressDetails")}</p>{" "}
+                {/* Translated address details */}
               </div>
             </div>
 
             {/* Call Us Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div
+              className="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <i className="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>{t("contacts.callUs")}</h3> {/* Translated call us heading */}
-                <p>{t("contacts.phone")}</p> {/* Translated phone number */}
+                <h3>{t("contacts.callUs")}</h3>{" "}
+                {/* Translated call us heading */}
+                <a href={`tel: +91${t("contacts.phone")}`}>
+                  <p>{t("contacts.phone")}</p> {/* Translated phone number */}
+                </a>
               </div>
             </div>
 
             {/* Email Us Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div
+              className="info-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <i className="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>{t("contacts.emailUs")}</h3> {/* Translated email us heading */}
-                <p>{t("contacts.email")}</p> {/* Translated email address */}
+                <h3>{t("contacts.emailUs")}</h3>{" "}
+                {/* Translated email us heading */}
+                <a href={`mailto: ${t("contacts.email")}`}>
+                  <p>{t("contacts.email")}</p> {/* Translated email address */}
+                </a>
               </div>
             </div>
           </div>

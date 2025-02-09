@@ -10,12 +10,12 @@ function About() {
     <section id="about" className="about section xl:px-28">
       <div className="container">
         <div className="row gy-4">
-          <div className="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
+          <div className="col-lg-6 position-relative" data-aos="fade-up">
             <img src={AboutImage} className="img-fluid" alt={t("aboutUs.imageAlt")} />
           </div>
 
           <div className="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up"
-            data-aos-delay="100">
+            >
             <h3>{t("aboutUs.title")}</h3>
             <p>{t("aboutUs.description")}</p>
             <ul>
