@@ -47,7 +47,7 @@ function Products() {
               : "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           }`}
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           {loading ? (
             <div className="loading-spinner">
@@ -69,7 +69,7 @@ function Products() {
                     ? "fade-left"
                     : "fade-up"
                 }
-                data-aos-delay={`${index * 300}`}
+                data-aos-delay={`${100}`}
               >
                 {/* Swiper Slider for Images & Videos */}
                 <div className="w-full relative">

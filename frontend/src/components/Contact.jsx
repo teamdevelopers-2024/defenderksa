@@ -11,7 +11,7 @@ function Contact() {
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div className="mb-4" data-aos="fade-up" data-aos-delay="100">
           <iframe
             style={{ border: 0, width: "100%", height: "270px" }}
             src="https://www.google.com/maps/embed?pb=..."
@@ -24,7 +24,7 @@ function Contact() {
         <div className="row gy-4">
           <div className="col-lg-4">
             {/* Address Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i className="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>{t("contacts.address")}</h3> {/* Translated address heading */}
@@ -33,7 +33,7 @@ function Contact() {
             </div>
 
             {/* Call Us Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i className="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>{t("contacts.callUs")}</h3> {/* Translated call us heading */}
@@ -42,7 +42,7 @@ function Contact() {
             </div>
 
             {/* Email Us Info */}
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i className="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>{t("contacts.emailUs")}</h3> {/* Translated email us heading */}

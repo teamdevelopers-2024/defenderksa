@@ -15,7 +15,7 @@ function About() {
           </div>
 
           <div className="col-lg-6 ps-lg-4 content d-flex flex-column justify-content-center" data-aos="fade-up"
-            data-aos-delay="200">
+            data-aos-delay="100">
             <h3>{t("aboutUs.title")}</h3>
             <p>{t("aboutUs.description")}</p>
             <ul>
